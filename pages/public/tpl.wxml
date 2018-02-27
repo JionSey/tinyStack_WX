@@ -1,0 +1,27 @@
+
+<!-- 商品列表 -->
+<template name="T_ShopList">
+<view class='shopListOutView' bindtap="shopListTap" data-item="{{item}}">
+  <image src="{{imagePath+image}}" class="left"/>
+    <view class="right">
+        <view class="title">
+        <text class="name">{{title}}</text>
+        <text class="desc">{{content}}</text>
+        </view>
+        <view class="time">
+          <image src="../../../images/tableViewCellR.png" class="right-more-image"></image> 
+        </view>  
+    </view>
+</view>
+</template>
+
+<!-- 头视图 -->
+<template name="T_HeadView">
+  <view class='head_outside_view'>
+    <view class="head_view">
+      <view class='head_left_view'></view>
+      <text class='head_title_label'>{{text}}</text>
+    </view>
+  </view>
+</template>
+

@@ -1,0 +1,49 @@
+.container{
+  background-color: #EDEDF0;
+}
+
+  /* <!-- 头部图片产地 --> */
+.header{
+  width: 100%;
+  height: 480rpx;
+  display: flex;
+  flex-direction:column;
+}
+.headImage{
+  width: 100%;
+  height: 400rpx;
+}
+
+.allTxt{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #EDEDF0;
+}
+
+.production_title{
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.production_title_detaile{
+  font-size: 29rpx;
+}
+
+  /* <!-- 定时区 --> */
+.time_area {
+  padding-top: 20rpx;
+  padding-left: 150rpx;
+  padding-right: 150rpx;
+  text-align: center;
+}
+
+.time_text{
+  font-size: 200rpx;
+}
+
+.time_btn{
+  background-color: green;
+  color: white;
+}

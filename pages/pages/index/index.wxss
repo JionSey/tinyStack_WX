@@ -1,0 +1,91 @@
+@import "../../public/head_view.wxss";
+
+.container{
+  padding: 0rpx;
+  background-color: #EDEDF0;
+}
+
+.area_class {
+  padding-bottom: 20rpx;
+}
+
+/* <!-- serch --> */
+.session-search {
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.session-search-spacing {
+  margin-bottom: 20rpx;
+}
+
+.search-placeholder {
+  flex: 1;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  color: #9e9e9e;
+}
+
+/* <!-- banner --> */
+.swiper{
+  height: 150rpx;
+  background-color: white;
+  display: flex;
+}
+.slide-image{
+  position: relative;
+  width:100%;
+  height:100%;
+  margin-bottom: 20rpx;
+}
+.banner_text{
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+  font-size: 30rpx;
+  color: white
+}
+
+/* <!-- efficacy --> */
+.scroll-view_H{
+  display:flex;
+  height:188rpx;
+  width:1316rpx;
+  flex-direction:row;
+  background-color: white;
+}
+.scroll-view-item_H{
+  width:188rpx;
+  height:100%;
+  text-align: center;
+}
+.efficacy-scroll-image{
+  margin-left:40rpx; 
+  margin-top:10rpx; 
+  border-radius: 50%;
+  width:108rpx;
+  height:108rpx;
+  display: block;
+}
+.efficacy_text{
+  width: 188rpx;
+  font-size: 25rpx;
+  color: #ccc;
+}
+
+/* <!-- type --> */
+.scroll-type-view_H{
+  display:flex;
+  height:188rpx;
+  width:1316rpx;
+  flex-direction:row;
+  background-color: white;
+}
+.type-scroll-image{
+  width:148rpx;
+  height:148rpx;
+  padding: 20rpx;
+  border-radius: 50%;
+}

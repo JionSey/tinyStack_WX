@@ -1,0 +1,49 @@
+<view>
+  <!-- 头部图片产地 -->
+  <view class='header'>
+     <image class="headImage" src="{{imagePath+detaileShopModel.image}}"></image> 
+    <view class='allTxt'>
+       <text class='production_title'>产地</text>
+       <text class='production_title_detaile'>{{detaileShopModel.production}}           </text>
+    </view>
+  </view>
+
+  <!-- 简介 -->
+  <view class='abstract'>
+    <view class='head_view'>
+      <view class='head_line'></view>
+      <text class='head_title'>简介</text>
+    </view>
+    <view class='detaile_text_out'><text class='detaile_text'>{{detaileShopModel.introduction}}</text>
+    </view>
+  </view>
+
+  <!-- 冲泡方法 -->
+  <view class='brewing_method'>
+    <view class='head_view'>
+      <view class='head_line'></view>
+      <text class='head_title'>冲泡方法</text>
+       <image class='brewing_image' bindtap="brewingTap" src="../../../images/detaile_brewing.png"></image> 
+    </view>
+    <view class='brewing_method_detaile_out'>
+      <view class='allTxt brewing_offset_text'>
+       <text class='production_title'>时间</text>
+       <text class='production_title_detaile'>{{detaileShopModel.time}}</text>
+      </view>
+      <view class='allTxt brewing_offset_text'>
+       <text class='production_title'>水温</text>
+       <text class='production_title_detaile'>{{detaileShopModel.temperature}}           </text>
+       </view>
+       <view class='detaile_text_out'><text class='detaile_text'>{{detaileShopModel.content}}</text>
+        </view>
+    </view>
+  </view>
+
+  <!-- 高清图集 -->
+  <view class='photos'>
+    <view class='head_view'>
+      <view class='head_line'></view>
+      <text class='head_title'>高清图集</text>
+    </view>
+  </view>
+</view>

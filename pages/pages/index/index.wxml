@@ -1,0 +1,60 @@
+<import src="../../public/tpl.wxml"/>
+<view class="container">
+  <!-- serch -->
+  <view class=".session-search session-search-spacing">
+    <icon class="session-search-icon" type="search" size="16"></icon>
+    <text class="search-placeholder" bindtap="searchTap">搜索茶叶</text>
+  </view>
+  <!-- banner -->
+  <view class='area_class'>
+    <swiper id="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{bannerArray}}">
+            <swiper-item data-item="{{item}}" bindtap="bannerTap">
+              <image src="{{imagePath+item.image}}" class="slide-image">
+                <text class="banner_text">{{item.title}}</text>
+              </image>
+            </swiper-item>
+        </block>
+    </swiper> 
+  </view>
+
+  <!-- efficacy -->
+  <template is="T_HeadView" data="{{text:efficacyHeadTitle}}"></template> 
+
+  <view class='area_class'>
+    <scroll-view  scroll-x style="width: 100%">
+        <view class="scroll-view_H">
+          <block wx:for="{{efficacyList}}">
+            <view data-item="{{item}}" bindtap="efficacyTap" class="scroll-view-item_H">
+              <image src="{{imagePath+item.image}}" class="efficacy-scroll-image">
+              </image>
+              <text class="efficacy_text">{{item.title}}</text>
+            </view> 
+          </block>
+        </view>
+        </scroll-view>
+  </view>
+
+  <!-- type -->
+  <template is="T_HeadView" data="{{text:typeHeadTitle}}"></template> 
+  <view class='area_class'>
+    <scroll-view  scroll-x style="width: 100%">
+        <view class=".scroll-type-view_H">
+          <block wx:for="{{typeList}}">
+            <view data-item="{{item}}" bindtap="typeTap" class="scroll-view-item_H">
+              <image src="{{imagePath+item.image}}" class="type-scroll-image">
+              </image>
+            </view> 
+          </block>
+        </view>
+        </scroll-view>
+  </view>
+
+  <!-- rank -->
+  <template is="T_HeadView" data="{{text:rankHeadTitle}}"></template> 
+  <view class="area_class">
+  <view class="list-item" wx:for="{{rankList}}">
+      <template is="T_ShopList" data="{{...item, imagePath, item}}"></template> 
+  </view>
+  </view>    
+</view>

@@ -1,0 +1,30 @@
+<view class="container">
+  <scroll-view scroll-y="true" style="height: 100%;">
+
+    <view class="header-container">
+      <image class="header-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="header-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+      <view class="item-container" bindtap="collectionTap" style="margin-top: 30rpx;">
+        <image class="item-icon" src="../../../images/ic_collection.png" />
+        <text class="item-label">我的收藏</text>
+      </view>
+
+      <view class="item-container" bindtap="likeTeaTap" style="margin-top: 2rpx;">
+        <image class="item-icon" src="../../../images/ic_submit.png" />
+        <text class="item-label">爱泡茶</text>
+      </view>
+
+      <view class="item-container" bindtap="shareTap" style="margin-top: 2rpx;">
+        <image class="item-icon" src="../../../images/ic_submit.png" />
+        <text class="item-label">分享</text>
+      </view>
+
+      <view class="item-container" bindtap="relationTap" style="margin-top: 2rpx;">
+        <image class="item-icon" src="../../../images/ic_submit.png" />
+        <text class="item-label">联系我们</text>
+      </view>
+
+  </scroll-view>
+</view>

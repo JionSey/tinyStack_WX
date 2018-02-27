@@ -1,0 +1,61 @@
+.container{
+  padding: 0rpx;
+}
+
+/* <!-- rankList --> */
+.shopListOutView{
+  width: 100%;
+  height:100rpx;
+  display:flex;
+  flex-direction:row;
+  padding:20rpx;
+  background-color: white;
+}
+.list{
+  padding-top:20rpx;
+  background-color: white;
+}
+.list-item{
+  background-color: white;
+}
+.left{
+  width:100rpx;
+  height:100rpx;
+}
+.right{
+    /* border:0rpx solid red; */
+    width:590rpx;
+    height:100rpx;
+    margin-left:20rpx;
+    display:flex;
+    flex-direction:row;
+    overflow:hidden;
+}
+.title{
+  /* border:0rpx solid blue; */
+  height:100rpx;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+.name{
+  font-size:30rpx;
+  font-weight:bold;
+  margin-bottom:20rpx;
+}
+.desc{
+  font-size:20rpx;
+}
+.time{
+  width:60rpx;
+  color:#ccc;
+  font-size:18rpx;
+  position: relative;
+}
+.right-more-image{
+  width:16rpx;
+  height:28rpx;
+  position: absolute;
+  top: 36rpx;
+  left: 30rpx;
+}

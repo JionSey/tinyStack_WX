@@ -1,0 +1,16 @@
+<view>
+  <!-- 头部图片产地 -->
+  <view class='header'>
+     <image class="headImage" src="../../../images/brewing_image.jpg"></image> 
+    <view class='allTxt'>
+       <text class='production_title'>冲泡温度:</text>
+       <text class='production_title_detaile'>{{detaileShopModel.temperature}}           </text>
+    </view>
+  </view>
+
+  <!-- 定时区 -->
+  <view class='time_area'>
+    <text class='time_text'>{{times}}</text>
+    <button data-state="{{timeBtnText}}" class='time_btn' bindtap="timeStarTap">{{timeBtnText}}</button>
+  </view>
+</view>

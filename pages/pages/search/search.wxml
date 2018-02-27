@@ -1,0 +1,17 @@
+<import src="../../public/tpl.wxml"/>
+<view class="container">
+  <view class="session-search session-search-spacing">
+    <icon class="search-icon" type="search" size="16"></icon>
+    <input class="search-content" placeholder-class="search-placeholder" bindinput="bindSearchInput" placeholder="搜索茶叶" value="{{searchValue}}" />
+    <block wx:if="{{showDelete}}">
+      <text class="search-delete" bindtap="bindSearchDelete">x</text>
+    </block>
+    <text class="search-cancel" bindtap="bindSearchCancel">取消</text>
+  </view>
+
+  <view class="list_area_class">
+  <view class="list-item" wx:for="{{dataArray}}">
+      <template is="T_ShopList" data="{{...item, imagePath, item}}"></template> 
+  </view>
+  </view> 
+</view>

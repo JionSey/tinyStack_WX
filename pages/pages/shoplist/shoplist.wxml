@@ -1,0 +1,8 @@
+<import src="../../public/tpl.wxml"/>
+<view class="container">
+  <view class="container list">
+  <view class="list-item" wx:for="{{dataArray}}">
+      <template is="T_ShopList" data="{{...item, imagePath, item}}"></template> 
+  </view>
+  </view>    
+</view>
